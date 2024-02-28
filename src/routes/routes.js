@@ -1,11 +1,21 @@
 import { createBrowserRouter } from "react-router-dom";
 
-import Calendario from "../Pages/Calendario";
+import DashAsesor from "../Pages/DashAsesor";
+import DonacionLibro from "../Pages/DonacionLibro";
+import Calendario from "../Pages/Calendario"
 
 export const rutas = createBrowserRouter([
     {
-      path: "/Calendario",
-      element: <Calendario />
-    }
+      path: "/DashAsesor",
+      element: <DashAsesor />
+    },
+    {
+      path: "/DonacionLibro",
+      element: <DonacionLibro />
+    },
+    {
+        path: "/Calendario",
+        element: <Calendario />
+      }
 
 ]);
