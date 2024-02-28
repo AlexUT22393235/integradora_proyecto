@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import DashAsesor from '../pages/DashAsesor';
 
 const Header = () => {
   return (
     <nav className="flex items-center justify-between p-6 bg-blue-950">
       <div className="flex items-center space-x-8">
-        <Link to='/'>
+        <Link to='/DashAsesor'>
         <img
           src="/logo.png"  
           alt="Logo"
@@ -14,16 +15,16 @@ const Header = () => {
         </Link>
 
         <div className="italic font-thin space-x-9">
-          <Link to='Control'>
-          <button className="text-white">Proyectos</button>
+          <Link to='/DonacionLibro'>
+          <button className="text-white">Donacion Libro</button>
+
           </Link>
-          <button className="text-white">Asesores</button>
-          <button className="text-white">Docentes</button>
-          <button className="text-white">Documentos</button>
-          <Link to='Tabla'>
-          <button className="text-white">Alumnos</button>
+
+          <Link to='/Calendario'>
+          <button className="text-white">Calendario</button>
+
           </Link>
-          <button className="text-white">Roles</button>
+          
         </div>
       </div>
 
