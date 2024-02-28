@@ -1,19 +1,41 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-function Header() {
-    return (
-        <>
-        <header className=' bg-sky-900 p-4 flex'> 
-        <h1 className='text-2xl font-bold text-white mr-10'>SGE/UT</h1>
-            <ul className='flex text-white'>
-                <li className='mr-4'>Gestion de Estadias</li>
-                <li className='mr-4'>Proyectos</li>
-                <li className='mr-4'>Calendario</li>
-                <li className='mr-4'>Documentos</li>
-            </ul>
-        </header>
-        </>
-    )
-}
+const Header = () => {
+  return (
+    <nav className="flex items-center justify-between p-6 bg-blue-950">
+      <div className="flex items-center space-x-8">
+        <Link to='/'>
+        <img
+          src="/logo.png"  
+          alt="Logo"
+          className="w-auto mr-20 h-9 max-w-32" 
+        />
+        </Link>
 
-export default Header
+        <div className="italic font-thin space-x-9">
+          <Link to='Control'>
+          <button className="text-white">Proyectos</button>
+          </Link>
+          <button className="text-white">Asesores</button>
+          <button className="text-white">Docentes</button>
+          <button className="text-white">Documentos</button>
+          <Link to='Tabla'>
+          <button className="text-white">Alumnos</button>
+          </Link>
+          <button className="text-white">Roles</button>
+        </div>
+      </div>
+
+      <div className="flex items-center">
+        <input
+          type="text"
+          placeholder="Buscar..."
+          className="p-2 mr-4 bg-white rounded-md"
+        />
+      </div>
+    </nav>
+  );
+};
+
+export default Header;

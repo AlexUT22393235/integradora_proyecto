@@ -5,16 +5,17 @@ function DonacioLibro() {
     return (
         <>
             <Header />
+            <h1 className="mb-6 text-2xl font-bold text-gray-700">Donación de Libros</h1>
+                    <hr className="mb-6 border-gray-400" />
             <div className="flex min-h-screen">
-                <div className="flex-grow p-8 bg-white rounded shadow-md">
-                    <h1 className="mb-6 text-2xl font-bold text-gray-700">Donación de Libros</h1>
-                    <hr className="mb-6 border-gray-400" /> {/* Línea horizontal */}
+                <div className="flex-grow p-8 bg-white ">
+
                     <div className="mb-4" >
                         <div className="relative mb-4">
                             <label htmlFor="title" className="block mb-2 text-sm font-bold text-gray-700">
                                 Título del Libro
                             </label>
-                            <div className="border-2 border-gray-300 rounded-lg">
+                            <div className="border-2 rounded-lg border-sky-900">
                                 <input
                                     id="title"
                                     type="text"
@@ -30,7 +31,7 @@ function DonacioLibro() {
                             id="payment-doc"
                             type="text"
                             placeholder="Documento de pago"
-                            className="w-full px-4 py-2 text-gray-700 bg-transparent border-2 border-gray-300 rounded-lg focus:outline-none"
+                            className="w-full px-4 py-2 text-gray-700 bg-transparent border-2 rounded-lg border-sky-900 focus:outline-none"
                         />
 
                         <label htmlFor="isbn" className="block mb-2 text-sm font-bold text-gray-700">
@@ -40,7 +41,7 @@ function DonacioLibro() {
                             id="isbn"
                             type="text"
                             placeholder="0-7645-2641-3"
-                            className="w-full px-4 py-2 text-gray-700 bg-transparent border-2 border-gray-300 rounded-lg focus:outline-none"
+                            className="w-full px-4 py-2 text-gray-700 bg-transparent border-2 rounded-lg border-sky-900 focus:outline-none"
                         />
 
                         <div className="flex items-center justify-between mt-4"> {/* Margen superior para los botones */}
