@@ -8,20 +8,26 @@ import ImageProyecto from "../image/imageProyecto.png";
 function InfoProyecto() {
   return (
     <div>
+        {/* Header  */}
          <Header />
           <h1 className="text-left text-2xl font-bold mt-8 ml-4">
             Información del proyecto
           </h1>
           <div className="border-b border-gray-300 m-1"></div>
+
+{/* div padre */}
       <div className="flex">
+
+        
+        {/* div imagen */}
         <div className="w-1/2 p-4">
         <img src={ImageProyecto} alt="Imagen del proyecto" className="" />
 
 
         </div>
-        <div className="w-1/2 p-4">
-         
 
+        {/* div informacion y texto */}
+        <div className="w-1/2 p-4">
           <div className="mr-4 p-4 flex">
             <div className="max-w-sm rounded overflow-hidden shadow-md bg-gray-100 mr-10">
               <div className="px-6 py-4">
@@ -70,6 +76,8 @@ function InfoProyecto() {
             </p>
           </div>
         </div>
+
+
       </div>
     </div>
   );
